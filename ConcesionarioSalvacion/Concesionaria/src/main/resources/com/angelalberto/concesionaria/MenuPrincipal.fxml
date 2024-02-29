@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.angelalberto.concesionaria.Controladores.MenuPrincipalControlador">
+   <children>
+      <Label blendMode="HARD_LIGHT" cache="true" cacheHint="SCALE" depthTest="ENABLE" layoutX="63.0" layoutY="14.0" prefHeight="110.0" prefWidth="479.0" text="Concesionario Java Motors" textFill="#ae0d0d">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.7684210538864136" green="0.07684210687875748" blue="0.07684210687875748" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="84.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#listaEmpleadosClick" prefHeight="90.0" prefWidth="194.0" text="Lista empleados">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="327.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#InventarioClick" prefHeight="90.0" prefWidth="194.0" text="Inventario">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="278.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#cerrarClick" text="Cerrar" />
+      <Text layoutX="170.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zona Administrativa">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
